@@ -35,7 +35,7 @@ class SplashScreen extends StatelessWidget {
                   duration: const Duration(seconds: 1),
                   child: SafeArea(
                     child: Center(
-                      child: Image.asset(width: 200, ImageConstants.logoPng),
+                      child: Image.asset(width: 400, ImageConstants.logoPng),
                     ),
                   ),
                 ),

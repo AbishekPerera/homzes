@@ -9,12 +9,12 @@ class AppTheme {
     return TextTheme(
       // For large banner like text
       displayLarge: GoogleFonts.robotoFlex(
-        fontSize: 32,
+        fontSize: 36,
         color: Colors.white,
         fontWeight: FontWeight.bold,
       ),
       displayMedium: GoogleFonts.robotoFlex(
-        fontSize: 24,
+        fontSize: 32,
         color: Colors.white,
         fontWeight: FontWeight.bold,
       ),
@@ -26,7 +26,7 @@ class AppTheme {
         color: Colors.black,
       ),
       headlineMedium: GoogleFonts.robotoFlex(
-        fontSize: 18,
+        fontSize: 24,
         fontWeight: FontWeight.bold,
         color: Colors.black,
       ),
