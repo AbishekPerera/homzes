@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:homzes/constants/colors_constants.dart';
 import 'package:homzes/constants/image_constants.dart';
 
 class SearchAndCatalogScreen extends StatelessWidget {
+  const SearchAndCatalogScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

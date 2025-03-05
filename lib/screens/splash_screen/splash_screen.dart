@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:homzes/constants/colors_constants.dart';
 import 'package:homzes/constants/image_constants.dart';
 import 'package:homzes/controllers/splash_screen/splash_screen_controller.dart';
 
@@ -15,10 +16,11 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.backgroundColor1,
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(ImageConstants.bg1),
+            image: AssetImage(ImageConstants.bg1lite),
             fit: BoxFit.cover,
           ),
         ),

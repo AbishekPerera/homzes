@@ -4,6 +4,7 @@ class ImageConstants {
 
   // background folder
   static const String bg1 = "assets/background/house image 1.png";
+  static const String bg1lite = "assets/background/house image 1 lite.png";
 
   // items folder
   static const String home2 = "assets/items/house image 2.jpg";
