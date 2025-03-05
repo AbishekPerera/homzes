@@ -11,6 +11,6 @@ var appRoutes = [
   GetPage(
     name: "/search-and-catalog-sreen",
     page: () => SearchAndCatalogScreen(),
-    transition: Transition.zoom,
+    transition: Transition.rightToLeftWithFade,
   ),
 ];
