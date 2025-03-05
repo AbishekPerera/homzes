@@ -120,7 +120,9 @@ class SearchAndCatalogScreen extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       color: Colors.grey,
                                       image: DecorationImage(
-                                        image: AssetImage(ImageConstants.home2),
+                                        image: NetworkImage(
+                                          ctrl.properties[index].image,
+                                        ),
                                         fit: BoxFit.cover,
                                       ),
                                       borderRadius: BorderRadius.circular(20),
