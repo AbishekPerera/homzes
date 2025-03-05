@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:homzes/constants/colors_constants.dart';
-import 'package:homzes/constants/image_constants.dart';
 import 'package:homzes/controllers/search_and_catalog_screen/search_and_catalog_screen_controller.dart';
 
 class SearchAndCatalogScreen extends StatelessWidget {
