@@ -10,7 +10,7 @@ class SplashScreenController extends GetxController {
   void onInit() {
     super.onInit();
     _animateLogo();
-    // _startAnimation();
+    _startAnimation();
   }
 
   void _animateLogo() async {
@@ -21,6 +21,6 @@ class SplashScreenController extends GetxController {
 
   Future<void> _startAnimation() async {
     await Future.delayed(const Duration(seconds: 2));
-    Get.offNamed("/home-screen");
+    Get.offNamed("/welcome-screen");
   }
 }
