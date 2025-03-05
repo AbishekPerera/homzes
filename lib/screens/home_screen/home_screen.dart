@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:homzes/constants/colors_constants.dart';
+import 'package:homzes/constants/image_constants.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -94,9 +96,14 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   // see all
-                  Text(
-                    "View all",
-                    style: Theme.of(context).textTheme.bodySmall,
+                  InkWell(
+                    onTap: () {
+                      Get.toNamed("/search-and-catalog-sreen");
+                    },
+                    child: Text(
+                      "View all",
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
                   ),
                 ],
               ),
@@ -106,17 +113,44 @@ class HomeScreen extends StatelessWidget {
           // featured items
           SliverToBoxAdapter(
             child: SizedBox(
-              height: 200,
+              height: 250,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 5,
                 itemBuilder: (context, index) {
-                  return Container(
-                    margin: const EdgeInsets.only(left: 20),
-                    width: 150,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(20),
+                  return InkWell(
+                    onTap: () {},
+                    borderRadius: BorderRadius.circular(20),
+                    child: Column(
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.only(left: 10, right: 10),
+                          height: 150,
+                          width: 150,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            image: DecorationImage(
+                              image: AssetImage(ImageConstants.home3),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                        ),
+                        const SizedBox(height: 5),
+                        Container(
+                          height: 50,
+                          width: 150,
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Text(
+                            "Apartment 3 rooms apartment 3 rooms",
+                            textAlign: TextAlign.left,
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 2,
+                            style: Theme.of(context).textTheme.bodyLarge!
+                                .copyWith(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ],
                     ),
                   );
                 },
@@ -142,9 +176,14 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   // see all
-                  Text(
-                    "View all",
-                    style: Theme.of(context).textTheme.bodySmall,
+                  InkWell(
+                    onTap: () {
+                      Get.toNamed("/search-and-catalog-sreen");
+                    },
+                    child: Text(
+                      "View all",
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
                   ),
                 ],
               ),
@@ -154,16 +193,46 @@ class HomeScreen extends StatelessWidget {
           // offer items
           SliverList(
             delegate: SliverChildBuilderDelegate((context, index) {
-              return Container(
-                margin: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 10,
-                ),
-                height: 150,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(20),
-                ),
+              return Column(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 10,
+                    ),
+                    height: 250,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      image: DecorationImage(
+                        image: AssetImage(ImageConstants.home2),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  const SizedBox(height: 5),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Apartment 3 rooms",
+                          style: Theme.of(context).textTheme.bodyLarge!
+                              .copyWith(fontWeight: FontWeight.bold),
+                        ),
+                        Row(
+                          children: [
+                            Icon(Icons.star_border, color: Colors.green),
+                            Text("4.5"),
+                            Text("(29 Reviews)"),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                ],
               );
             }, childCount: 5),
           ),
