@@ -17,6 +17,8 @@ dependencies:
   google_fonts: ^6.2.1
   intl: ^0.19.0
   firebase_core: ^3.12.1
+  cloud_firestore: ^5.6.5
+  firebase_storage: ^12.4.4
 
 dev_dependencies:
   flutter_test:
@@ -24,8 +26,6 @@ dev_dependencies:
 
   flutter_lints: ^5.0.0
   flutter_launcher_icons: ^0.14.3
-  cloud_firestore: ^5.6.5
-  firebase_storage: ^12.4.4
 
 flutter:
   uses-material-design: true
