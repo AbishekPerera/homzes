@@ -127,7 +127,9 @@ class WelcomeScreen extends StatelessWidget {
                             height: 50,
                             width: double.infinity,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Get.toNamed("/home-screen");
+                              },
                               child: Text(
                                 "Create an account",
                                 style: Theme.of(context).textTheme.displaySmall,
