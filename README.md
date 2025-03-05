@@ -1,16 +1,74 @@
-# homzes
+# **Homzes - Flutter Mobile App**
 
-A new Flutter project.
+## **Overview**
 
-## Getting Started
+This is a Flutter-based mobile application that follows the provided Figma design and integrates Firebase for data retrieval. The project includes three screens, seamless navigation, and a structured Firebase setup.
 
-This project is a starting point for a Flutter application.
+## **Features**
 
-A few resources to get you started if this is your first Flutter project:
+✅ Fully implemented UI based on the Figma design  
+✅ Firebase integration for retrieving and displaying property data  
+✅ GetX for efficient state management  
+✅ Navigation between screens with animation  
+✅ Responsive UI for different screen sizes
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## **Tech Stack**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Framework:** Flutter
+- **State Management:** GetX
+- **Database:** Firebase Firestore
+
+## **Project Structure**
+
+```
+/lib
+ ├── controllers/   # GetX controllers for state management
+ ├── models/        # Data models
+ ├── screens/       # UI screens
+ ├── services/      # Firebase interaction logic
+ ├── routes/         # Routing functions
+ ├── theme/       # Reusable UI components
+ ├── main.dart      # Application entry point
+```
+
+## **Installation & Setup**
+
+1. **Clone the Repository**
+
+   ```sh
+   git clone https://github.com/AbishekPerera/homzes.git
+   cd homzes
+   ```
+
+2. **Install Dependencies**
+
+   ```sh
+   flutter pub get
+   ```
+
+3. **Set Up Firebase**
+
+   - Create a Firebase project
+   - Enable Firestore Database
+   - Add Firebase config files (`google-services.json` for Android, `GoogleService-Info.plist` for iOS) in the appropriate folders
+   - Upload images to a CDN and store URLs in Firestore
+
+4. **Run the Application**
+   ```sh
+   flutter run
+   ```
+
+## **Branches**
+
+- **Main Branch:** Fully implemented project with Firebase integration.
+- **UI-Implementation Branch:** Contains only the UI implementation.  
+  🔗 [UI-Only Version](https://github.com/AbishekPerera/homzes/tree/ui-implementation)
+
+## **Contributing**
+
+Pull requests are welcome. For major changes, please open an issue first to discuss the proposed updates.
+
+## **Contact**
+
+📧 Email: abhishekperera77@gmail.com  
+🔗 GitHub: [GitHub Profile](https://github.com/AbishekPerera)
